@@ -1,0 +1,15 @@
+{
+  "metadata": { "name": "Run approval demo", "externalId": "approval_demo" },
+  "spec": {
+    "description": "Harmless test of the conversation tool-approval UI. Call this when the user asks for an approval test or demo. It requires the user's explicit Approve or Deny decision. Approval returns a fixed acknowledgment; it does not change resources or contact any service. If denied, acknowledge the decision and do not retry unless the user asks for a new test.",
+    "llmToolName": "approval_demo",
+    "requiresApproval": true,
+    "parameters": { "type": "object", "properties": {}, "additionalProperties": false },
+    "config": {
+      "type": "bare",
+      "bare": {
+        "alwaysSetResult": "Approval demo completed successfully. No resources were changed."
+      }
+    }
+  }
+}

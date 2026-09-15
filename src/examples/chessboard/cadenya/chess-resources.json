@@ -1,0 +1,9 @@
+{
+  "agentId": "agent_01M22663RHMXCQYN2QSHEPP50N",
+  "variationId": "agentvar_01M22664A8WETZDSX94JQE2B5T",
+  "widgetId": "wgt_01M226658TWMJ03HZR1HFE498V",
+  "toolSetId": "toolset_01M22661JEH1XGE2B1FPKW5R84",
+  "modelId": "openrouter-widgets-demo-cadenya-com.z-ai-glm-flash-latest",
+  "get_board_state": "tool_01M22662MC0DRN89YMEEZJN07R",
+  "make_move": "tool_01M226634VDQ6DMZKV0ZH23QYR"
+}

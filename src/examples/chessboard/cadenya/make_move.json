@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "name": "Make move",
+    "externalId": "make_move"
+  },
+  "spec": {
+    "description": "Make one legal Black move on the browser chessboard. Must use the exact expected_fen from get_board_state. Returns an error without changing the board if stale, illegal, game over, or not Black turn.",
+    "llmToolName": "make_move",
+    "requiresApproval": false,
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "promotion": {
+          "type": "string",
+          "enum": ["q", "r", "b", "n"]
+        },
+        "expected_fen": {
+          "type": "string"
+        }
+      },
+      "required": ["from", "to", "promotion", "expected_fen"],
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "bare",
+      "bare": {}
+    }
+  }
+}

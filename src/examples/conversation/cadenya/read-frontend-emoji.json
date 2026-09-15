@@ -1,0 +1,10 @@
+{
+  "metadata": { "name": "Read frontend emoji", "externalId": "read_frontend_emoji" },
+  "spec": {
+    "description": "Read the current emoji selected in the portal's frontend state. The visitor can shuffle it at any time. Call this tool for every request for the current emoji; previous results may be stale. The embedding page supplies the result.",
+    "llmToolName": "read_frontend_emoji",
+    "requiresApproval": false,
+    "parameters": { "type": "object", "properties": {}, "additionalProperties": false },
+    "config": { "type": "bare", "bare": {} }
+  }
+}

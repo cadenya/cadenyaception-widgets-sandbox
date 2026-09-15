@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Shuffle frontend emoji",
+    "externalId": "shuffle_frontend_emoji"
+  },
+  "spec": {
+    "description": "Shuffle the emoji in the embedding page to a random different emoji and return the new value. Call only when the visitor asks to change or shuffle their page emoji. The page performs the change and supplies the result.",
+    "llmToolName": "shuffle_frontend_emoji",
+    "requiresApproval": false,
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "bare",
+      "bare": {}
+    }
+  }
+}

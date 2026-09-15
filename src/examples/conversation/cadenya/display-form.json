@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "name": "Display form",
+    "externalId": "display_form"
+  },
+  "spec": {
+    "description": "Display an interactive JSON Schema form in the conversation and wait for the visitor. Use to collect or review structured data before an action. Return value is {status: submitted, data: ...} or {status: cancelled}. Never perform the requested action until submitted; after cancellation stop. Use a JSON Schema object with properties and required; title/description label the form. uiSchema can set textarea widgets and field order. Do not ask for credentials.",
+    "llmToolName": "display_form",
+    "requiresApproval": false,
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "schema": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "JSON Schema for the form, root type object. Include property titles, types and validation."
+        },
+        "uiSchema": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "formData": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Initial suggested values, editable by the user."
+        },
+        "submitLabel": {
+          "type": "string"
+        }
+      },
+      "required": ["title", "description", "schema", "uiSchema", "formData", "submitLabel"],
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "bare",
+      "bare": {}
+    }
+  }
+}

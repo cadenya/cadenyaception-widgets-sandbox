@@ -1,0 +1,21 @@
+{
+  "workspaceId": "workspace_01M1N6K4T1BW6TJF6N6F2F3135",
+  "agentId": "agent_01M220289XRXH3SH7N0WWMXQ8A",
+  "variationId": "agentvar_01M22028YV2FZ9P4YE2Z5TB0NV",
+  "widgetId": "wgt_01M2202BVHWFQAX107FJVVENBZ",
+  "toolSetId": "toolset_01M22026HTAJZ670DGQ0YJQGBK",
+  "fakeDataToolSetId": "toolset_01M1N98B92RW01WPHF9P9THQPX",
+  "displayTravelCardToolId": "tool_01M2G5C1G2HWWY24X4WV4Y767V",
+  "displayFormToolId": "tool_01M2250KBWKDMJ2K0Y836084FZ",
+  "approvalDemoToolId": "tool_01M222ZDV0JBZ3CC603YADEHXJ",
+  "frontendEmojiToolId": "tool_01M223NRFAYSHBR9V3SN68VDGX",
+  "shuffleFrontendEmojiToolId": "tool_01M2241BYB8S47CGQYSBY7Z38Q",
+  "modelId": "openrouter-widgets-demo-cadenya-com.z-ai-glm-flash-latest",
+  "origins": [
+    "http://localhost:3000",
+    "https://cadenyaception-widgets-sandbox.vercel.app",
+    "https://cadenyaception-widgets-sandbox-rctjv4yd9-cadenya.vercel.app",
+    "http://localhost:3001",
+    "https://widgets-demo.cadenya.com"
+  ]
+}

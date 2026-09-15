@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/cadenya/widgets-ui-react.git",
+  "commit": "4663557fc7de93f4b944d33c3aa65a04eef343df",
+  "sources": [
+    {
+      "commit": "606f7ae6a8fa627d1c43e4200784546cf0b8bae4"
+    },
+    {
+      "commit": "7e438c2ca9bec5a13e58781d1182fbf86f39d54a"
+    },
+    {
+      "commit": "e13b463840a25611c636eb40d2383be6d43951f6"
+    }
+  ],
+  "version": "0.2.0",
+  "artifact": "cadenya-widgets-ui-react-4663557fc7de.tgz"
+}

@@ -1,0 +1,60 @@
+/*
+ * Licensed brand fonts are served from assets.cadenya.com.
+ * Each font stack includes system fallbacks.
+ */
+
+@font-face {
+  font-family: "ABC Arizona Flare";
+  src: url("https://assets.cadenya.com/fonts/ABCArizonaFlareVariable.woff2?v=20260913") format("woff2");
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Arizona Sans";
+  src: url("https://assets.cadenya.com/fonts/ABCArizonaSansVariable.woff2?v=20260913") format("woff2");
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Arizona Sans";
+  src: url("https://assets.cadenya.com/fonts/ABCArizonaSans-RegularItalic.woff2?v=20260913") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Arizona Sans";
+  src: url("https://assets.cadenya.com/fonts/ABCArizonaSans-BoldItalic.woff2?v=20260913") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("https://assets.cadenya.com/fonts/BerkeleyMono-Regular.otf?v=20260913") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("https://assets.cadenya.com/fonts/BerkeleyMono-Bold.otf?v=20260913") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("https://assets.cadenya.com/fonts/BerkeleyMono-Oblique.otf?v=20260913") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

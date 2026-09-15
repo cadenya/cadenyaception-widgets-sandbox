@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Get board state",
+    "externalId": "get_board_state"
+  },
+  "spec": {
+    "description": "Read the current live chessboard, legal moves, FEN, pieces and game status from the browser.",
+    "llmToolName": "get_board_state",
+    "requiresApproval": false,
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "bare",
+      "bare": {}
+    }
+  }
+}

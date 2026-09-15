@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "name": "Apply diagram changes",
+    "externalId": "apply_diagram_changes"
+  },
+  "spec": {
+    "description": "Atomically apply diagram edits against expected_revision from get_diagram_state. Upsert nodes/connections by stable ID, or remove IDs. Nodes have kind start, step, decision, end. Coordinates are top-left pixels. Preserve existing nodes and positions unless asked to change them. Empty arrays mean no changes of that kind. If stale, read state again.",
+    "llmToolName": "apply_diagram_changes",
+    "requiresApproval": false,
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "expected_revision": {
+          "type": "integer"
+        },
+        "upsert_nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "enum": ["start", "step", "decision", "end"]
+              },
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              }
+            },
+            "required": ["id", "label", "kind", "x", "y"],
+            "additionalProperties": false
+          }
+        },
+        "upsert_edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "target": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            },
+            "required": ["id", "source", "target", "label"],
+            "additionalProperties": false
+          }
+        },
+        "remove_node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "remove_edge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "expected_revision",
+        "upsert_nodes",
+        "upsert_edges",
+        "remove_node_ids",
+        "remove_edge_ids"
+      ],
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "bare",
+      "bare": {}
+    }
+  }
+}

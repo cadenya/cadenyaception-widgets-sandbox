@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "name": "Display travel card",
+    "externalId": "display_travel_card"
+  },
+  "spec": {
+    "description": "Show a destination, activity, stay idea, or itinerary as a persistent travel card. Use general travel knowledge and visitor preferences. This presents a suggestion, not live search results or a booking. Call at most three times per response. Label any budget as an estimate with currency and basis; use empty strings when unknown.",
+    "llmToolName": "display_travel_card",
+    "requiresApproval": false,
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "kind", "location", "description", "highlights", "timing", "budget"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["destination", "activity", "stay", "itinerary"]
+        },
+        "location": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "highlights": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 30,
+          "description": "Keep ordinary cards to about six highlights. Itineraries may include one entry per day, up to 30."
+        },
+        "timing": {
+          "type": "string",
+          "description": "Suggested duration or season; empty if unknown"
+        },
+        "budget": {
+          "type": "string",
+          "description": "Rough estimate including currency and per-person/per-night/total basis, or empty if unknown. Never a live quote."
+        }
+      }
+    },
+    "config": {
+      "type": "bare",
+      "bare": {
+        "alwaysSetResult": "Travel suggestion card displayed. No reservation or purchase was made."
+      }
+    }
+  }
+}

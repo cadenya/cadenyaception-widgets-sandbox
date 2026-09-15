@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Get diagram state",
+    "externalId": "get_diagram_state"
+  },
+  "spec": {
+    "description": "Read the current canvas nodes, connections, selected node IDs, positions and revision. Always read before modifying the diagram.",
+    "llmToolName": "get_diagram_state",
+    "requiresApproval": false,
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "bare",
+      "bare": {}
+    }
+  }
+}
